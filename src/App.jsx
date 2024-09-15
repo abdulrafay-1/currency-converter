@@ -13,7 +13,7 @@ function App() {
   const options = Object.keys(currencyInfo);
 
   const convert = () => {
-    setConvertedAmount(amount * currencyInfo[to]);
+    setConvertedAmount((amount * currencyInfo[to]).toFixed(3));
   };
 
   const swap = () => {
